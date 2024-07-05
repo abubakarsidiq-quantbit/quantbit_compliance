@@ -1,0 +1,54 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-05 12:26:07.130860",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "beginning",
+  "payment",
+  "interest",
+  "principal",
+  "balance"
+ ],
+ "fields": [
+  {
+   "fieldname": "beginning",
+   "fieldtype": "Currency",
+   "label": "Beginning"
+  },
+  {
+   "fieldname": "payment",
+   "fieldtype": "Currency",
+   "label": "Payment"
+  },
+  {
+   "fieldname": "interest",
+   "fieldtype": "Currency",
+   "label": "Interest"
+  },
+  {
+   "fieldname": "principal",
+   "fieldtype": "Currency",
+   "label": "Principal"
+  },
+  {
+   "fieldname": "balance",
+   "fieldtype": "Currency",
+   "label": "Balance"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-07-05 15:04:05.832373",
+ "modified_by": "Administrator",
+ "module": "quantbit_compliance",
+ "name": "Interest Chart",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
