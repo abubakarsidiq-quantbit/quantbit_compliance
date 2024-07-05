@@ -6,7 +6,7 @@ class InterestCalculator(Document):
     def get_chart(self):
         try:
             amount = self.amount
-            period_months = int(self.period) * 12
+            period_months = self.period * 12
             monthly_rate = (self.rate / 100) / 12
             self.payment = self.calculate_pmt(monthly_rate, period_months, amount)
             balance = amount
@@ -28,6 +28,7 @@ class InterestCalculator(Document):
         except Exception as e:
             frappe.msgprint(f"Error generating interest chart: {str(e)}")
             frappe.log_error(message=str(e), title="Interest Chart Generation Error")
+            
     def calculate_pmt(self,rate, nper, pv):
         if rate != 0:
             pmt = (rate * pv) / (1 - (1 + rate) ** -nper)
