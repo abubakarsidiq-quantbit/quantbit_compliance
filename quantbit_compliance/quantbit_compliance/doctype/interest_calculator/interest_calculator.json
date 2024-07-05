@@ -1,0 +1,92 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "LOAN-.######",
+ "creation": "2024-07-05 14:54:44.032210",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "amount",
+  "period",
+  "get_chart",
+  "column_break_iq5yn",
+  "rate",
+  "payment",
+  "interest_chart_section",
+  "interest_chart"
+ ],
+ "fields": [
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Amount",
+   "reqd": 1
+  },
+  {
+   "fieldname": "period",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Period",
+   "reqd": 1
+  },
+  {
+   "fieldname": "get_chart",
+   "fieldtype": "Button",
+   "label": "Get Chart"
+  },
+  {
+   "fieldname": "column_break_iq5yn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "rate",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Rate",
+   "reqd": 1
+  },
+  {
+   "fieldname": "payment",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Payment"
+  },
+  {
+   "fieldname": "interest_chart_section",
+   "fieldtype": "Section Break",
+   "label": "Interest Chart"
+  },
+  {
+   "fieldname": "interest_chart",
+   "fieldtype": "Table",
+   "label": "Interest Chart",
+   "options": "Interest Chart"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-05 15:03:27.781365",
+ "modified_by": "Administrator",
+ "module": "quantbit_compliance",
+ "name": "Interest Calculator",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
