@@ -26,8 +26,9 @@
    "reqd": 1
   },
   {
+   "description": "Period In Year",
    "fieldname": "period",
-   "fieldtype": "Data",
+   "fieldtype": "Float",
    "in_list_view": 1,
    "label": "Period",
    "reqd": 1
@@ -68,7 +69,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-07-05 15:03:27.781365",
+ "modified": "2024-07-05 17:21:12.515529",
  "modified_by": "Administrator",
  "module": "quantbit_compliance",
  "name": "Interest Calculator",
