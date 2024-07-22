@@ -1,6 +1,6 @@
 // Copyright (c) 2024, abub.patel@erpdata.in and contributors
 // For license information, please see license.txt
-
+// hello
 frappe.ui.form.on('Period Wise Interest Calculator', {
 	calculate_interest: function(frm) {
 		if(frm.doc.amount && frm.doc.rate_of_interest && frm.doc.date && frm.doc.period){
