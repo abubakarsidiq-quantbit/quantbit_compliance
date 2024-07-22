@@ -8,11 +8,17 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "name1",
   "amount",
-  "period",
   "get_chart",
-  "column_break_iq5yn",
+  "column_break_bpnik",
+  "period",
   "rate",
+  "column_break_s09xn",
+  "total_interest_amount",
+  "total_principal_amount",
+  "column_break_zvzly",
+  "company",
   "payment",
   "interest_chart_section",
   "interest_chart"
@@ -26,21 +32,16 @@
    "reqd": 1
   },
   {
-   "description": "Period In Year",
    "fieldname": "period",
    "fieldtype": "Float",
    "in_list_view": 1,
-   "label": "Period",
+   "label": "Period (In Year)",
    "reqd": 1
   },
   {
    "fieldname": "get_chart",
    "fieldtype": "Button",
    "label": "Get Chart"
-  },
-  {
-   "fieldname": "column_break_iq5yn",
-   "fieldtype": "Column Break"
   },
   {
    "fieldname": "rate",
@@ -65,11 +66,45 @@
    "fieldtype": "Table",
    "label": "Interest Chart",
    "options": "Interest Chart"
+  },
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_bpnik",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_s09xn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_interest_amount",
+   "fieldtype": "Float",
+   "label": "Total Interest Amount"
+  },
+  {
+   "fieldname": "total_principal_amount",
+   "fieldtype": "Float",
+   "label": "Total Principal Amount"
+  },
+  {
+   "fieldname": "column_break_zvzly",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-07-05 17:21:12.515529",
+ "modified": "2024-07-10 13:35:04.118136",
  "modified_by": "Administrator",
  "module": "quantbit_compliance",
  "name": "Interest Calculator",

@@ -1,0 +1,164 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "ITC-.####",
+ "creation": "2024-07-10 10:02:15.388428",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "int_name",
+  "amount",
+  "calculate_interest",
+  "column_break_gx9xa",
+  "date",
+  "rate_of_interest",
+  "column_break_vreex",
+  "account",
+  "no_of_days",
+  "column_break_axjbh",
+  "company",
+  "period",
+  "section_break_crnlr",
+  "interest_bifurcation",
+  "section_break_wbfdf",
+  "column_break_bnklc",
+  "column_break_nhid1",
+  "column_break_wlhdy",
+  "column_break_kvicn",
+  "total_interest_amount"
+ ],
+ "fields": [
+  {
+   "fieldname": "int_name",
+   "fieldtype": "Data",
+   "label": "Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Float",
+   "label": "Amount",
+   "reqd": 1
+  },
+  {
+   "default": "365",
+   "fieldname": "no_of_days",
+   "fieldtype": "Data",
+   "label": "No. Of Days",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_gx9xa",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "rate_of_interest",
+   "fieldtype": "Float",
+   "label": "Rate Of Interest",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_axjbh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "period",
+   "fieldtype": "Select",
+   "label": "Period",
+   "options": "\nCustom\nQuarterly\nHalf Yearly\nYearly",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_crnlr",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "interest_bifurcation",
+   "fieldtype": "Table",
+   "label": "Interest Bifurcation",
+   "options": "Period Wise Interest"
+  },
+  {
+   "fieldname": "calculate_interest",
+   "fieldtype": "Button",
+   "label": "Calculate Interest"
+  },
+  {
+   "fieldname": "column_break_vreex",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "account",
+   "fieldtype": "Link",
+   "label": "Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "column_break_bnklc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_nhid1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_wlhdy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_interest_amount",
+   "fieldtype": "Currency",
+   "label": "Total Interest Amount"
+  },
+  {
+   "fieldname": "section_break_wbfdf",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_kvicn",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-22 13:02:20.853756",
+ "modified_by": "Administrator",
+ "module": "quantbit_compliance",
+ "name": "Period Wise Interest Calculator",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
