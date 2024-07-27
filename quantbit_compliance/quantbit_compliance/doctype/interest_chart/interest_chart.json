@@ -16,33 +16,38 @@
   {
    "fieldname": "beginning",
    "fieldtype": "Currency",
+   "in_list_view": 1,
    "label": "Beginning"
   },
   {
    "fieldname": "payment",
    "fieldtype": "Currency",
+   "in_list_view": 1,
    "label": "Payment"
   },
   {
    "fieldname": "interest",
    "fieldtype": "Currency",
+   "in_list_view": 1,
    "label": "Interest"
   },
   {
    "fieldname": "principal",
    "fieldtype": "Currency",
+   "in_list_view": 1,
    "label": "Principal"
   },
   {
    "fieldname": "balance",
    "fieldtype": "Currency",
+   "in_list_view": 1,
    "label": "Balance"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2024-07-05 15:04:05.832373",
+ "modified": "2024-07-09 10:59:00.937933",
  "modified_by": "Administrator",
  "module": "quantbit_compliance",
  "name": "Interest Chart",
