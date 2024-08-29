@@ -43,6 +43,8 @@ class PeriodWiseInterestCalculator(Document):
 			
 			self.no_of_days = tot_days
 			self.total_interest_amount = tot_int_amount
+			self.tds = (tot_int_amount/100)*10
+			self.net_pay = tot_int_amount - ((tot_int_amount/100)*10)
 
 	def calculate_end_date(self, start_date, months):
 		"""
@@ -74,3 +76,5 @@ class PeriodWiseInterestCalculator(Document):
 		
 		self.no_of_days = tot_days
 		self.total_interest_amount = tot_int_amount
+		self.tds = (tot_int_amount/100)*10
+		self.net_pay = tot_int_amount - ((tot_int_amount/100)*10)

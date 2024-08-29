@@ -14,28 +14,34 @@
   "column_break_gx9xa",
   "date",
   "rate_of_interest",
+  "receipt_number",
   "column_break_vreex",
   "account",
   "no_of_days",
+  "pan_number",
   "column_break_axjbh",
   "company",
   "period",
   "section_break_crnlr",
   "interest_bifurcation",
   "section_break_wbfdf",
+  "remark",
   "column_break_bnklc",
+  "total_interest_amount",
   "column_break_nhid1",
+  "tds",
   "column_break_wlhdy",
-  "column_break_kvicn",
-  "total_interest_amount"
+  "net_pay"
  ],
  "fields": [
   {
    "fieldname": "int_name",
-   "fieldtype": "Data",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Name",
-   "reqd": 1,
-   "unique": 1
+   "options": "Supplier",
+   "reqd": 1
   },
   {
    "fieldname": "amount",
@@ -63,6 +69,8 @@
   {
    "fieldname": "rate_of_interest",
    "fieldtype": "Float",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Rate Of Interest",
    "reqd": 1
   },
@@ -107,6 +115,8 @@
   {
    "fieldname": "account",
    "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Account",
    "options": "Account"
   },
@@ -132,13 +142,39 @@
    "fieldtype": "Section Break"
   },
   {
-   "fieldname": "column_break_kvicn",
-   "fieldtype": "Column Break"
+   "fieldname": "receipt_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Receipt Number",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "remark",
+   "fieldtype": "Small Text",
+   "label": "Remark"
+  },
+  {
+   "fieldname": "tds",
+   "fieldtype": "Float",
+   "label": "TDS"
+  },
+  {
+   "fieldname": "net_pay",
+   "fieldtype": "Float",
+   "label": "Net Pay"
+  },
+  {
+   "fetch_from": "int_name.pan",
+   "fieldname": "pan_number",
+   "fieldtype": "Data",
+   "label": "PAN Number"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-07-22 13:02:20.853756",
+ "modified": "2024-08-24 11:00:15.057528",
  "modified_by": "Administrator",
  "module": "quantbit_compliance",
  "name": "Period Wise Interest Calculator",
